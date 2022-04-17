@@ -1,0 +1,94 @@
+body{
+  width:100%; /*ページ全体の幅は100%と指定する*/	
+  text-align:center; /*ページ全体を中央揃えにする*/
+}
+#wrap{ 
+  width: 1300px;	   /*全体の幅を指定する*/  
+  margin: 0 auto;    /*マージンの指定をする、ブラウザ対策*/
+  text-align:left;   /*全体を左揃えにする。*/
+}
+
+.navigation{
+   /* flexboxで要素を真ん中に指定 */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 1300px;
+   width:100%; /*ページ全体の幅は100%と指定する*/	
+  text-align:center; /*ページ全体を中央揃えにする*/
+ }
+ #wrap{ 
+  width: 1300px;	   /*全体の幅を指定する*/  
+  margin: 0 auto;    /*マージンの指定をする、ブラウザ対策*/
+  text-align:left;   /*全体を左揃えにする。*/
+}
+ .navigation ul {
+   width: 100%;
+   white-space: nowrap;
+   text-align:center;
+ }
+ .button{
+  text-align:center;
+   display: block;
+   padding:10px;
+   background:white;
+   width:20%;
+   float:left;
+   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) ;
+   /* カーソルを離した際のアニメーションの速度調整 */
+   transition:.2s all;
+ }
+ .button p {
+  text-align:center;
+   height: 10px;
+   font-weight: 300;
+ }
+ .button a {
+   color:#333333;
+   /* リンク指定した要素のスタイルを削除 */
+   text-decoration:none;
+ }
+ .navigation:hover .button{
+   /* ナビゲーションをマウスオーバーした際のアニメーションの動きを指定 */
+   filter:blur(3px);
+   /* hoverしたボタン意外がぼやける */
+   opacity:.5;
+   transform: scale(1);
+   /* 全てのボタンを通常サイズに指定 */
+ }
+ .navigation:hover .button:hover{
+   transition: .5s;
+   /* hoverした際にボタンのサイズを縮小する */
+   transform:scale(.8);
+   /* hoverしている要素のみぼやけない指定 */
+   filter:blur(0px);
+   /* hoverするとボタンが立体的に見えるように影を指定 */
+   box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.6);
+   opacity:1;
+ }
+ .navigation:hover .button:hover > p {
+   font-weight: bold;
+ }
+
+ .navigation p2{
+   margin: 0 0 0 auto;
+   white-space: nowrap;
+}
+
+.main {
+  padding:100px 100px;
+}
+
+.main-concept h1 {
+  font-size: 130px;
+  margin :50px 0px
+}
+.main-concept span {
+  color:#ee817b;
+}
+
+.main-concept h2 {
+  font-family: "Times New Roman",cursive;
+  font-size: 30px;
+}
+
